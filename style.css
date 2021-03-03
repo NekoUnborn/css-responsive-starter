@@ -1,6 +1,7 @@
 article {
   display: flex;
   flex-wrap: wrap;
+  /* height: 100vh; */
 }
 
 article > * {
@@ -42,4 +43,31 @@ main {
 
 #feature-3 {
   background-color: #C8C6FA;
+}
+
+/* Tablet */
+@media only screen and (min-width: 401px) and (max-width: 960px) {
+  nav {
+    background-color: red;
+  }
+  section {
+    width: 50%
+  }
+}
+@media only screen and (min-width: 961px) {
+    #sign-up {
+      order: 1;
+    }
+   
+    main {
+      height: auto;
+      min-height: 500px;
+      order: 2;
+    }
+   
+    .feature {
+     flex: 1;
+    }
+
+  }
 }
